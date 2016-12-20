@@ -1,0 +1,13 @@
+termcapinfo xterm ti@:te@
+bindkey -k k1 select 0
+bindkey -k k2 select 1
+bindkey -k k3 select 2
+bindkey -k k4 select 3
+bindkey -k k5 select 4
+bindkey -k k6 select 5
+bindkey -k k7 select 6
+bindkey -k k8 select 7
+#bindkey ^C kill
+hardstatus alwayslastline
+hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}'
+

@@ -1,0 +1,12 @@
+- clean: ['~']
+
+- link:
+    ~/.dotfiles: ''
+    ~/.gitconfig:
+    ~/.screenrc:
+    ~/.antigen:
+    ~/.zshrc:
+    
+
+- shell:
+    - [git submodule update --init --recursive, Installing/updating submodules]

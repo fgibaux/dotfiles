@@ -1,0 +1,16 @@
+[color]
+    ui = true
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    pt = !git tag -l | xargs git tag -d && git fetch -t
+[core]
+    editor = /usr/bin/vim
+[tar "tar.xz"]
+    command = xz -c
+[push]
+    default = simple
+[include]
+    path = ~/.gitconfig_local
