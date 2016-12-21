@@ -53,4 +53,4 @@ echo "     Welcome "$USER" on `hostname` !"
 echo
 
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/bin/virtualenvwrapper.sh
+[ -f /usr/bin/virtualenvwrapper.sh ] && source /usr/bin/virtualenvwrapper.sh
