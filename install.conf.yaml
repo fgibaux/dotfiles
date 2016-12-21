@@ -6,6 +6,8 @@
     ~/.screenrc:
     ~/.antigen:
     ~/.zshrc:
+    ~/.tmux.conf:
+    ~/.tmux:
     
 
 - shell:
