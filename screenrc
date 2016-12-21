@@ -1,4 +1,4 @@
-termcapinfo xterm ti@:te@
+term screen-256color
 bindkey -k k1 select 0
 bindkey -k k2 select 1
 bindkey -k k3 select 2
