@@ -8,6 +8,8 @@
     ~/.zshrc:
     ~/.tmux.conf:
     ~/.tmux:
+    ~/.vim:
+    ~/.vimrc:
     
 
 - shell:

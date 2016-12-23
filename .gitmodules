@@ -7,3 +7,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/repos/github.com/Shougo/dein.vim"]
+	path = vim/repos/github.com/Shougo/dein.vim
+	url = https://github.com/Shougo/dein.vim
