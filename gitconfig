@@ -4,7 +4,7 @@
     st = status
     co = checkout
     ci = commit
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    hist = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     pt = !git tag -l | xargs git tag -d && git fetch -t
 [core]
     editor = /usr/bin/vim
