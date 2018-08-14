@@ -1,37 +1,42 @@
-source $HOME/.antigen/antigen.zsh
-
-# Load the oh-my-zsh's library.
-antigen use oh-my-zsh
+source ~/.zplug/init.zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle git-flow
-antigen bundle jsontools
-antigen bundle python
-antigen bundle pip
-antigen bundle command-not-found
-antigen bundle screen
-antigen bundle wd
-antigen bundle ls-colors
-antigen bundle symfony2
-antigen bundle systemd
-antigen bundle yum
-antigen bundle docker
-antigen bundle docker-compose
-antigen bundle history
-antigen bundle composer
+zplug "plugins/git",  from:oh-my-zsh
+zplug "plugins/git-flow",  from:oh-my-zsh
+zplug "plugins/jsontools",  from:oh-my-zsh
+zplug "plugins/python",  from:oh-my-zsh
+zplug "plugins/pip",  from:oh-my-zsh
+zplug "plugins/screen",  from:oh-my-zsh
+zplug "plugins/wd",  from:oh-my-zsh
+zplug "plugins/ls-colors",  from:oh-my-zsh
+zplug "plugins/symfony2",  from:oh-my-zsh
+zplug "plugins/systemd",  from:oh-my-zsh
+zplug "plugins/docker",  from:oh-my-zsh
+zplug "plugins/docker-compose",  from:oh-my-zsh
+zplug "plugins/history",  from:oh-my-zsh
+zplug "plugins/laravel5",  from:oh-my-zsh
 
 #antigen bundle flogib-aliases
 #antigen bundle ifs
 
 # Syntax highlighting bundle.
-antigen bundle zsh-users/zsh-syntax-highlighting
+zplug zsh-users/zsh-syntax-highlighting, defer:2
 
 # Load the theme.
-antigen theme https://gist.github.com/fgibaux/bef829ad67f2a37c30fbba07e53c54c4 fgibaux
+# zplug "fgibaux/bef829ad67f2a37c30fbba07e53c54c4", from:gist, as:theme
 
-# Tell antigen that you're done.
-antigen apply
+zplug denysdovhan/spaceship-prompt, use:spaceship.zsh, from:github, as:theme
+
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+zplug load
 
 
 setopt HIST_FIND_NO_DUPS

@@ -4,7 +4,7 @@
     ~/.dotfiles: ''
     ~/.gitconfig:
     ~/.screenrc:
-    ~/.antigen:
+    ~/.zplug:
     ~/.zshrc:
     ~/.tmux.conf:
     ~/.tmux:

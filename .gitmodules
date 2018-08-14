@@ -1,12 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "antigen"]
-	path = antigen
-	url = https://github.com/zsh-users/antigen.git
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
 [submodule "vim/repos/github.com/Shougo/dein.vim"]
 	path = vim/repos/github.com/Shougo/dein.vim
 	url = https://github.com/Shougo/dein.vim
+[submodule "zplug"]
+	path = zplug
+	url = https://github.com/zplug/zplug
