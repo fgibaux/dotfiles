@@ -14,6 +14,7 @@ zplug "plugins/systemd",  from:oh-my-zsh
 zplug "plugins/docker",  from:oh-my-zsh
 zplug "plugins/docker-compose",  from:oh-my-zsh
 zplug "plugins/history",  from:oh-my-zsh
+zplug "plugins/composer",  from:oh-my-zsh, defer:2
 zplug "plugins/laravel5",  from:oh-my-zsh
 
 #antigen bundle flogib-aliases
@@ -155,7 +156,7 @@ alias la='ls -lAh'
 
 export PATH="$PATH:~/bin"
 
-[ -d ~/.composer ] && export PATH="$PATH:~/.composer/vendor/bin"
+[ -d ~/.config/composer/vendor/bin ] && export PATH="$PATH:~/.config/composer/vendor/bin"
 
 [ -f ~/.zshalias ] && source ~/.zshalias
 
