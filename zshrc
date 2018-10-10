@@ -17,6 +17,7 @@ zplug "plugins/history",  from:oh-my-zsh
 zplug "plugins/composer",  from:oh-my-zsh, defer:2
 zplug "plugins/laravel5",  from:oh-my-zsh
 zplug "buonomo/yarn-completion", defer:2
+zplug "plugins/ng",  from:oh-my-zsh
 
 #antigen bundle flogib-aliases
 #antigen bundle ifs
