@@ -156,9 +156,9 @@ alias l='ls -lah'
 alias ll='ls -lh'
 alias la='ls -lAh'
 
-export PATH="$PATH:~/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/bin"
 
-[ -d ~/.config/composer/vendor/bin ] && export PATH="$PATH:~/.config/composer/vendor/bin"
+[ -d ~/.config/composer/vendor/bin ] && export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 
 [ -f ~/.zshalias ] && source ~/.zshalias
 
